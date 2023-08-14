@@ -1,7 +1,8 @@
-import fpinscala.datatypes.Tree
+package fpinscala.datatypes
+
+import fpinscala.utils.*
+
 import Tree.*
-import fpinscala.utils.Utils.*
-import pprint.*
 
 class TreeTest extends munit.FunSuite:
 
@@ -16,7 +17,7 @@ class TreeTest extends munit.FunSuite:
     println(s"size = ${tree.size}")
     println(s"depth = ${tree.depth}")
     println(s"maximum = ${tree.maximum}")
-    pprintln(tree.map(_ + 1))
+    println(tree.map(_ + 1))
     delim()
   }
 
@@ -29,6 +30,6 @@ class TreeTest extends munit.FunSuite:
     println(s"size = ${tree.sizeViaFold}")
     println(s"depth = ${tree.depthViaFold}")
     println(s"maximum = ${tree.maximumViaFold}")
-    pprintln(tree.mapViaFold(_ + 1))
+    println(tree.mapViaFold(_ + 1))
     delim()
   }

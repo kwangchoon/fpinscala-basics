@@ -1,6 +1,6 @@
 package fpinscala.basics.for_comprehension
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 import pprint.*
 
 case class Person(name: String, age: Int)

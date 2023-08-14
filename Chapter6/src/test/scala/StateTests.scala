@@ -1,5 +1,5 @@
 import pprint.*
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 import fpinscala.datatypes.*
 import State.*
 

@@ -23,7 +23,7 @@ object Expr {
 }
 
 object FpDemo /* extends App */ {
-  import fpinscala.utils.Utils.*
+  import fpinscala.utils.*
   import Expr.*
 
   delim()

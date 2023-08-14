@@ -1,5 +1,5 @@
 package fpinscala.datatypes
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 
 object StateDemo1 /* extends App */:
   import State.*

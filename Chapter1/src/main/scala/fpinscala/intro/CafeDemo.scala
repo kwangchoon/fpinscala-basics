@@ -1,6 +1,6 @@
 package fpinscala.intro
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 
 object CafeDemo extends App:
   import Cafes.*

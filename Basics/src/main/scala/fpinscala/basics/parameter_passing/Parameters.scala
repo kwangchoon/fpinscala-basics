@@ -1,6 +1,6 @@
 package fpinscala.basics.parameter_passing
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.label
 
 /*
  * (λx.x + x)((λy.y * y)(5))

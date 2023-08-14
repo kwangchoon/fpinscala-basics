@@ -1,9 +1,9 @@
 package fpinscala.datatypes
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 import Either.*
 
-object Eitherdemo1 extends App:
+object Eitherdemo1 /* extends App */:
   import scala.util.control.NonFatal
 
   def mean(xs: Seq[Double]): Either[String, Double] =
@@ -15,9 +15,14 @@ object Eitherdemo1 extends App:
     try Right(x / y)
     catch case NonFatal(e) => Left(e)
 
+  delim()
+  println(safeDiv(5, 3))
+  println(safeDiv(1, 0))
+  delim()
+
 end Eitherdemo1
 
-object EitherDemo2 extends App:
+object EitherDemo2 /* extends App */:
 
   /** Top secret formula for computing an annual car insurance premium from two
     * key factors.
@@ -33,6 +38,13 @@ object EitherDemo2 extends App:
       a <- Either.catchNonFatal(age.toInt)
       tickets <- Either.catchNonFatal(numberOfSpeedingTickets.toInt)
     yield insuranceRateQuote(a, tickets)
+    // Change for-comprehension to `map2`
+
+  delim()
+  println(parseInsuranceRateQuote("34", "2"))
+  println(parseInsuranceRateQuote("34", "a"))
+  println(parseInsuranceRateQuote("x", "a"))
+  delim()
 
 end EitherDemo2
 
@@ -40,12 +52,12 @@ object EitherDemo3 /* extends App */:
   import EitherSample.*
 
   // Exercise 4.8
-  // In this implementation, map2 is only able to report one error, even if both
-  // the name and the age are invalid. What would you need to change in order to
-  // report both errors? Would you change map2 or the signature of mkPerson? Or
+  // In this implementation, `map2` is only able to report one error, even if both
+  // the `name` and the `age` are invalid. What would you need to change in order to
+  // report both errors? Would you change `map2` or the signature of `mkPerson`? Or
   // could you create a new data type that captures this requirement better than
-  // Either does, with some additional structure? How would orElse, traverse, and
-  // sequence behave differently for that data type?
+  // `Either` does, with some additional structure? How would `orElse`, `traverse`, and
+  // `sequence` behave differently for that data type?
 
   delim()
   label("Both invald, but only one error reported")
@@ -59,7 +71,7 @@ object EitherDemo3 /* extends App */:
   delim()
 
   label(
-    "Each successive use of map2Both adds another layer of List to the error type"
+    "Each successive use of `map2Both` adds another layer of List to the error type"
   )
   val p3 = Person.makeBoth("", 34)
   val p4 = Person.makeBoth("", -1)

@@ -1,6 +1,6 @@
 package fpinscala.rand
 
-import fpinscala.utils.Utils._
+import fpinscala.utils.*
 import fpinscala.rng.SimpleRNG
 import Rand.*
 

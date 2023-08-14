@@ -1,7 +1,7 @@
 package fpinscala.rng
 
 object RngDemo /* extends App */ {
-  import fpinscala.utils.Utils.*
+  import fpinscala.utils.*
   import RNG.*
 
   delim()

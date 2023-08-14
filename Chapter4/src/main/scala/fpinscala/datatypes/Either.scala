@@ -5,7 +5,7 @@ enum Either[+E, +A]:
   case Right(value: A)
 
   // Exercise 4.6
-  // Implement versions of map, flatMap, orElse, and map2 on Either that operate
+  // Implement versions of `map`, `flatMap`, `orElse`, and `map2` on Either that operate
   // on the Right value.
   def map[B](f: A => B): Either[E, B] = ???
 
@@ -23,7 +23,7 @@ object Either:
   import Either.*
 
   // Exercise 4.7
-  // Implement sequence and traverse for Either. These should return the first
+  // Implement `sequence` and `traverse` for Either. These should return the first
   // error that’s encountered, if there is one.
   def sequence[E, A](as: List[Either[E, A]]): Either[E, List[A]] = ???
 
@@ -69,28 +69,3 @@ object Either:
     traverseAll(as)(identity)
 
 end Either
-
-object EitherSample:
-  import Either.*
-
-  case class Name private (value: String)
-  object Name:
-    def apply(name: String): Either[String, Name] =
-      if name == null || name.isEmpty then Left("Name is empty")
-      else Right(new Name(name))
-
-  case class Age private (value: Int)
-  object Age:
-    def apply(age: Int): Either[String, Age] =
-      if age < 0 then Left("Age is out of range")
-      else Right(new Age(age))
-
-  case class Person(name: Name, age: Age)
-  object Person:
-    def make(name: String, age: Int): Either[String, Person] =
-      Name(name).map2(Age(age))(Person(_, _))
-
-    def makeBoth(name: String, age: Int): Either[List[String], Person] =
-      map2Both(Name(name), Age(age), Person(_, _))
-
-end EitherSample

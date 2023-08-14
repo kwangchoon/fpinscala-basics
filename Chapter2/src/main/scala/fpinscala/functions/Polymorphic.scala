@@ -1,6 +1,6 @@
 package fpinscala.functions
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 
 /*Monomorphic functions vs. Polymporphic functions
  *

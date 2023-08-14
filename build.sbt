@@ -2,6 +2,7 @@ import Dependencies._
 
 val scalaTestVersion = "3.2.16"
 val scalaCheckVersion = "1.15.4"
+val pprintVersion = "0.8.1"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 ThisBuild / scalaVersion := "3.3.0" // "3.3.0", "2.13.11"
@@ -24,10 +25,7 @@ lazy val commonSettings = Seq(
     "org.scalactic" %% "scalactic" % scalaTestVersion,
     "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
     "org.scalacheck" %% "scalacheck" % scalaCheckVersion % "test",
-    // "org.scalatestplus" %% "scalacheck-1-17" % "3.2.16.0" % "test",
-    // "org.scalatestplus" %% "junit-4-13" % "3.2.16.0" % "test",
-    // "org.slf4j" % "slf4j-simple" % "1.7.36" % "test",
-    "com.lihaoyi" %% "pprint" % "0.7.1",
+    "com.lihaoyi" %% "pprint" % pprintVersion,
     // munit test framework
     "org.scala-lang" %% "toolkit-test" % "0.1.7" % Test
   ),
@@ -38,8 +36,6 @@ lazy val commonSettings = Seq(
     "-language:postfixOps",
     "-language:higherKinds",
     "-Ykind-projector", // allow `*` as wildcard to be compatible with kind projector
-    // "-explain", // explain errors in more detail
-    // "-explain-types", // explain type errors in more detail
     "-indent", // allow significant indentation.
     "-new-syntax", // require `then` and `do` in control expressions.
     "-print-lines", // show source code line numbers.
@@ -62,7 +58,6 @@ lazy val root = (project in file("."))
     chapter4,
     chapter5,
     chapter6,
-    parser,
     utils
   )
 
@@ -94,7 +89,10 @@ lazy val chapter2 = (project in file("Chapter2"))
 lazy val chapter3 = (project in file("Chapter3"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter3"
+    name := "Chapter3",
+    console / initialCommands := """
+      import fpinscala.datatypes.*, List.*
+      """
   )
   .dependsOn(utils)
 
@@ -103,8 +101,8 @@ lazy val chapter4 = (project in file("Chapter4"))
   .settings(
     name := "Chapter4",
     console / initialCommands := """
-      import fpinscala.datatype.*
-      import Option.*
+      import fpinscala.datatypes.*
+      import Option.*, Either.*, Validated.*
       """
   )
   .dependsOn(utils)
@@ -131,13 +129,6 @@ lazy val chapter6 = (project in file("Chapter6"))
       """
   )
   .dependsOn(utils)
-
-lazy val parser = (project in file("Parser"))
-  .settings(commonSettings: _*)
-  .settings(
-    name := "Parser"
-  )
-  .dependsOn(utils, chapter6)
 
 lazy val utils = (project in file("Utils"))
   .settings(commonSettings: _*)

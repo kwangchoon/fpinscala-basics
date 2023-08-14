@@ -7,12 +7,12 @@ enum Validated[+E, +A]:
   case Invalid(errors: List[E])
 
   // Exercise 4.8
-  // In this implementation, map2 is only able to report one error, even if both
+  // In this implementation, `map2` is only able to report one error, even if both
   // the name and the age are invalid. What would you need to change in order to
-  // report both errors? Would you change map2 or the signature of mkPerson? Or
+  // report both errors? Would you change `map2` or the signature of `mkPerson`? Or
   // could you create a new data type that captures this requirement better than
-  // Either does, with some additional structure? How would orElse, traverse, and
-  // sequence behave differently for that data type?
+  // Either does, with some additional structure? How would `orElse`, `traverse`, and
+  // `sequence` behave differently for that data type?
   def map[B](f: A => B): Validated[E, B] = this match
     case Valid(a)    => Valid(f(a))
     case Invalid(es) => Invalid(es)
@@ -25,9 +25,15 @@ enum Validated[+E, +A]:
     case (Valid(_), Invalid(es))      => Invalid(es)
     case (Invalid(es1), Invalid(es2)) => Invalid(es1 ++ es2)
 
-  def flatMap[E, B](f: A => Validated[E, B]): Validated[E, B] = ???
+  def flatMap[EE >: E, B](f: A => Validated[EE, B]): Validated[EE, B] =
+    this match
+      case Valid(a)    => f(a)
+      case Invalid(es) => Invalid(es)
 
-  def orElse[E, A](f: => Validated[E, A]): Validated[E, A] = ???
+  def orElse[EE >: E, B >: A](f: => Validated[EE, B]): Validated[EE, B] =
+    this match
+      case Valid(a)    => Valid(a)
+      case Invalid(es) => f
 
   def toEither: Either[List[E], A] = this match
     case Valid(a)    => Right(a)
@@ -49,26 +55,3 @@ object Validated:
 
   def sequence[E, A](vs: List[Validated[E, A]]): Validated[E, List[A]] =
     traverse(vs, identity)
-
-object Validatedsample:
-  import Validated.{Invalid, Valid}
-
-  case class Name private (value: String)
-
-  object Name:
-    def apply(name: String): Validated[String, Name] =
-      if name == "" || name == null then Invalid(List("Name is empty."))
-      else Valid(new Name(name))
-
-  case class Age private (value: Int)
-  object Age:
-    def apply(age: Int): Validated[String, Age] =
-      if age < 0 then Invalid(List("Age is out of range."))
-      else Valid(new Age(age))
-
-  case class Person(name: Name, age: Age)
-  object Person:
-    def make(name: String, age: Int): Validated[String, Person] =
-      Name(name).map2(Age(age))(Person(_, _))
-
-end Validatedsample

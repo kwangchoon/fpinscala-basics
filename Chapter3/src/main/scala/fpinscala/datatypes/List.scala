@@ -18,6 +18,7 @@ object List:
   // Replace the first element of the List with a different value.
   // Use sys.error("message") to throw an exception if the List is Nil.
   def setHead[A](as: List[A], value: A): List[A] = ???
+
   /*
    * The Efficiency of Data Sharing
    */
@@ -44,9 +45,10 @@ object List:
    */
 
   def foldRight[A, B](as: List[A], acc: B)(f: (A, B) => B): B = ???
+
   // Exercise 3.9
   // Compute the length of a list using foldRight.
-  def length[A](as: List[A]): Int = ???
+  def lengthViaFoldRight[A](as: List[A]): Int = ???
 
   // Exercise 3.10
   // Write another general list-recursion function, foldLeft, that is tail-recursive.
@@ -114,6 +116,7 @@ object List:
   // Write a function that accepts two lists and constructs a new list by adding corresponding elements.
   // For example, List(1,2,3) and List(4,5,6) become List(5,7,9).
   def addPairwise(a: List[Int], b: List[Int]): List[Int] = ???
+
   // Exercise 3.23
   // Generalize the function you just wrote so that it’s not specific to integers or addition.
   // Name your generalized function zipWith.

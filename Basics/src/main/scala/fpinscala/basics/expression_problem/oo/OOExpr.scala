@@ -23,7 +23,7 @@ case class Mul(lhs: Expr, rhs: Expr) extends Expr {
 }
 
 object OODemo /* extends App */ {
-  import fpinscala.utils.Utils.*
+  import fpinscala.utils.*
 
   delim()
   val expr1 = Add(Literal(100), Literal(200))

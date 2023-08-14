@@ -1,6 +1,6 @@
 package fpinscala.basics.variances
 
-import fpinscala.utils.Utils.*
+import fpinscala.utils.*
 
 abstract class Animal(val name: String):
   override def toString(): String = s"Animal($name)"

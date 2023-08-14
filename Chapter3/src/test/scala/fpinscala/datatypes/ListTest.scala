@@ -1,4 +1,5 @@
-import fpinscala.datatypes.List
+package fpinscala.datatypes
+
 import List.*
 
 class ListTest extends munit.FunSuite {
