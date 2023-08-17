@@ -11,6 +11,9 @@ package fpinscala.datatypes
 opaque type State[S, +A] = S => (A, S)
 
 object State:
+
+  def apply[S, A](f: S => (A, S)): State[S, A] = ???
+
   extension [S, A](underlying: State[S, A])
     def run(s: S): (A, S) = ???
 
@@ -21,8 +24,6 @@ object State:
     def flatMap[B](f: A => State[S, B]): State[S, B] = ???
 
     def map2ViaFlatMap[B, C](sb: State[S, B])(f: (A, B) => C): State[S, C] = ???
-
-  def apply[S, A](f: S => (A, S)): State[S, A] = ???
 
   // Exercise 6.10
   // Generalize the functions unit, map, map2, flatMap, and sequence. Add them

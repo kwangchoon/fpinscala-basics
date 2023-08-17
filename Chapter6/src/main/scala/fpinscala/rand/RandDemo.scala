@@ -4,49 +4,67 @@ import fpinscala.utils.*
 import fpinscala.rng.SimpleRNG
 import Rand.*
 
-object RandDemo /* extends App */ {
+val rng = SimpleRNG(42)
+
+object RandDemo1 /* extends App */:
 
   delim()
   label("unit(42)")
-  println(unit(42)(SimpleRNG(42)))
+  println(unit(42)(rng))
   delim()
 
   label("map(unit(42))(_ + 1)")
-  println(map(unit(42))(_ + 1)(SimpleRNG(42)))
+  println(map(unit(42))(_ + 1)(rng))
   delim()
 
-  label("doubleViaMap(SimpleRNG(42))")
-  println(doubleViaMap(SimpleRNG(42)))
+  label("doubleViaMap(rng)")
+  println(doubleViaMap(rng))
   delim()
 
-  /*
-   * Combining State Actions Tests
-   */
+end RandDemo1
+
+/*
+ * Combining State Actions Tests
+ */
+object RandDemo2 /* extends App */:
+
   label("map2(unit(1), unit(7))(_ + _)")
-  println(map2(unit(1), unit(7))(_ + _)(SimpleRNG(42)))
+  println(map2(unit(1), unit(7))(_ + _)(rng))
+
   label("both(unit(1), unit(7))")
-  println(both(unit(1), unit(7))(SimpleRNG(42)))
-  label("randIntDouble(SimpleRNG(42))")
-  println(randIntDouble(SimpleRNG(42)))
-  label("randDoubleInt(SimpleRNG(42))")
-  println(randDoubleInt(SimpleRNG(42)))
+  println(both(unit(1), unit(7))(rng))
+
+  label("randIntDouble(rng)")
+  println(randIntDouble(rng))
+
+  label("randDoubleInt(rng)")
+  println(randDoubleInt(rng))
   delim()
 
-  label("sequence(List(int, int, int))(SimpleRNG(42))")
-  println(sequence(List(int, int, int))(SimpleRNG(42)))
-  label("intsViaSequence(3)(SimpleRNG(42))")
-  println(intsViaSequence(3)(SimpleRNG(42)))
+end RandDemo2
+
+object RandDemo3 /* extends App */:
+
+  label("sequence(List(int, int, int))(rng)")
+  println(sequence(List(int, int, int))(rng))
+
+  label("intsViaSequence(3)(rng)")
+  println(intsViaSequence(3)(rng))
   delim()
 
-  /*
-   * Neting State Actions Tests
-   */
+end RandDemo3
 
-  label("nonNegativeLessThan_Manual(100)(SimpleRNG(42))")
-  println(nonNegativeLessThan_Manual(100)(SimpleRNG(42)))
+/*
+ * Neting State Actions Tests
+ */
+object RandDemo4 /* extends App */:
+
+  label("nonNegativeLessThan_Manual(100)(rng)")
+  println(nonNegativeLessThan_Manual(100)(rng))
   delim()
 
-  label("nonNegativeLessThan(100)(SimpleRNG(42))")
-  println(nonNegativeLessThan(100)(SimpleRNG(42)))
+  label("nonNegativeLessThan(100)(rng)")
+  println(nonNegativeLessThan(100)(rng))
   delim()
-}
+
+end RandDemo4

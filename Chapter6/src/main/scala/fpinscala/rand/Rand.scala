@@ -7,19 +7,13 @@ type Rand[+A] = RNG => (A, RNG) // State actions or state transitions
 
 object Rand {
 
-  val int: Rand[Int] = RNG.int(_)
-
-  val nonNegativeInt: Rand[Int] = RNG.nonNegativeInt(_)
-
-  val double: Rand[Double] = RNG.double(_)
-
-  val intDouble: Rand[(Int, Double)] = RNG.intDouble(_)
-
-  val doubleInt: Rand[(Double, Int)] = RNG.doubleInt(_)
-
-  val double3: Rand[(Double, Double, Double)] = RNG.double3(_)
-
-  def ints(count: Int): Rand[List[Int]] = RNG.ints(count)(_)
+  val int: Rand[Int]                          = rng => RNG.int(rng)
+  val nonNegativeInt: Rand[Int]               = RNG.nonNegativeInt(_)
+  val double: Rand[Double]                    = RNG.double
+  val intDouble: Rand[(Int, Double)]          = RNG.intDouble
+  val doubleInt: Rand[(Double, Int)]          = RNG.doubleInt
+  val double3: Rand[(Double, Double, Double)] = RNG.double3
+  def ints(count: Int): Rand[List[Int]]       = RNG.ints(count)
 
   def unit[A](a: A): Rand[A] = ???
 
@@ -68,7 +62,7 @@ object Rand {
   def nonNegativeLessThan_Manual(n: Int): Rand[Int] =
     rng =>
       val (i, rng2) = nonNegativeInt(rng)
-      val mod = i % n
+      val mod       = i % n
       if i + (n - 1) - mod >= 0 then (mod, rng2)
       else nonNegativeLessThan_Manual(n)(rng2)
 
@@ -83,8 +77,9 @@ object Rand {
       else nonNegativeLessThan(n)
 
   // Exercise 6.9
-  // Reimplement map and map2 in terms of flatMap. The fact that this is possible is what
-  // we’re referring to when we say that flatMap is more powerful than map and map2.
+  // Reimplement `map` and `map2` in terms of `flatMap`. The fact that
+  // this is possible is what we’re referring to when we say that `flatMap`
+  // is more powerful than `map` and `map2`.
   def mapViaFlatMap[A, B](s: Rand[A])(f: A => B): Rand[B] = ???
 
   def map2ViaFlatMap[A, B, C](ra: Rand[A], rb: Rand[B])(

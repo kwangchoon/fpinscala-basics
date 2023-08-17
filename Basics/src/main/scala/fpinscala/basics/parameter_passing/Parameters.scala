@@ -9,7 +9,7 @@ import fpinscala.utils.label
 object Call_by_Value /* extends App */:
 
   def funcY(y: Int) = { println("funcY"); y * y }
-  def funcX(x: Int) = x + x
+  def funcX(x: Int) = { println("funcX"); x + x }
 
   label("Call by Value")
   println(
@@ -20,8 +20,8 @@ end Call_by_Value
 
 object Call_by_Name /* extends App */:
 
-  def funcY(y: Int) = { println("funcY"); y * y }
-  def funcX(x: => Int) = x + x
+  def funcY(y: Int)    = { println("funcY"); y * y }
+  def funcX(x: => Int) = { println("funcX"); x + x }
 
   label("Call by Name")
   println(
@@ -35,6 +35,7 @@ object Call_by_Need /* extends App */:
   def funcY(y: Int) = { println("funcY"); y * y }
 
   def funcX(x: => Int) =
+    println("funcX")
     lazy val k = x
     k + k
 

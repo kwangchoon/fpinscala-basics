@@ -1,16 +1,16 @@
 import Dependencies._
 
-val scalaTestVersion = "3.2.16"
+val scalaTestVersion  = "3.2.16"
 val scalaCheckVersion = "1.15.4"
-val pprintVersion = "0.8.1"
+val pprintVersion     = "0.8.1"
 
-Global / onChangedBuildSource := ReloadOnSourceChanges
-ThisBuild / scalaVersion := "3.3.0" // "3.3.0", "2.13.11"
-ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / organization := "com.fpinscala"
-ThisBuild / organizationName := "scarlet"
-ThisBuild / watchTriggeredMessage := Watch.clearScreenOnTrigger
-ThisBuild / watchBeforeCommand := Watch.clearScreen
+Global / onChangedBuildSource            := ReloadOnSourceChanges
+ThisBuild / scalaVersion                 := "3.3.0" // "3.3.0", "2.13.11"
+ThisBuild / version                      := "0.1.0-SNAPSHOT"
+ThisBuild / organization                 := "com.fpinscala"
+ThisBuild / organizationName             := "scarlet"
+ThisBuild / watchTriggeredMessage        := Watch.clearScreenOnTrigger
+ThisBuild / watchBeforeCommand           := Watch.clearScreen
 ThisBuild / watchForceTriggerOnAnyChange := true
 Test / testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "10")
 
@@ -22,10 +22,10 @@ addCommandAlias("c", "console")
 
 lazy val commonSettings = Seq(
   libraryDependencies ++= Seq(
-    "org.scalactic" %% "scalactic" % scalaTestVersion,
-    "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
+    "org.scalactic"  %% "scalactic"  % scalaTestVersion,
+    "org.scalatest"  %% "scalatest"  % scalaTestVersion  % "test",
     "org.scalacheck" %% "scalacheck" % scalaCheckVersion % "test",
-    "com.lihaoyi" %% "pprint" % pprintVersion,
+    "com.lihaoyi"    %% "pprint"     % pprintVersion,
     // munit test framework
     "org.scala-lang" %% "toolkit-test" % "0.1.7" % Test
   ),
@@ -36,8 +36,8 @@ lazy val commonSettings = Seq(
     "-language:postfixOps",
     "-language:higherKinds",
     "-Ykind-projector", // allow `*` as wildcard to be compatible with kind projector
-    "-indent", // allow significant indentation.
-    "-new-syntax", // require `then` and `do` in control expressions.
+    "-indent",      // allow significant indentation.
+    "-new-syntax",  // require `then` and `do` in control expressions.
     "-print-lines", // show source code line numbers.
     "-unchecked", // enable additional warnings where generated code depends on assumptions
     "-Xfatal-warnings", // fail the compilation if there are any warnings
@@ -47,7 +47,7 @@ lazy val commonSettings = Seq(
 
 lazy val root = (project in file("."))
   .settings(
-    name := "FPinScala",
+    name                        := "FPinScala",
     libraryDependencies += munit % Test
   )
   .aggregate(
@@ -71,7 +71,7 @@ lazy val basics = (project in file("Basics"))
 lazy val chapter1 = (project in file("Chapter1"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter1",
+    name                      := "Chapter1",
     console / initialCommands := """
       import fpinscala.intro.*, Cafes.*
       import pprint.*
@@ -89,7 +89,7 @@ lazy val chapter2 = (project in file("Chapter2"))
 lazy val chapter3 = (project in file("Chapter3"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter3",
+    name                      := "Chapter3",
     console / initialCommands := """
       import fpinscala.datatypes.*, List.*
       """
@@ -99,7 +99,7 @@ lazy val chapter3 = (project in file("Chapter3"))
 lazy val chapter4 = (project in file("Chapter4"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter4",
+    name                      := "Chapter4",
     console / initialCommands := """
       import fpinscala.datatypes.*
       import Option.*, Either.*, Validated.*
@@ -110,7 +110,7 @@ lazy val chapter4 = (project in file("Chapter4"))
 lazy val chapter5 = (project in file("Chapter5"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter5",
+    name                      := "Chapter5",
     console / initialCommands := """
       import fpinscala.datatypes.*, LazyList.*
       """
@@ -120,7 +120,7 @@ lazy val chapter5 = (project in file("Chapter5"))
 lazy val chapter6 = (project in file("Chapter6"))
   .settings(commonSettings: _*)
   .settings(
-    name := "Chapter6",
+    name                      := "Chapter6",
     console / initialCommands := """
       import fpinscala.rng.*
       import fpinscala.rand.*

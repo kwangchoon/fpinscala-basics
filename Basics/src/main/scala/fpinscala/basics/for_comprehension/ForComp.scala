@@ -32,7 +32,7 @@ object For_Comprehension2 /* extends App */:
   delim()
 
   val result = for
-    person <- persons
+    person     <- persons
     department <- departments
   yield (person.name, department.title)
 
@@ -46,7 +46,7 @@ object For_Comprehension3 /* extends App */:
 
   val result = for
     department <- departments
-    person <- persons if person.name == department.chair
+    person     <- persons if person.name == department.chair
   yield (department.title, person.age)
 
   pprintln(result)

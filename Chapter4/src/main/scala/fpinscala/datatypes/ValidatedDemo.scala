@@ -5,7 +5,7 @@ import fpinscala.utils.*
 import Validated.*
 import ValidatedSample.Person
 
-object ValidatedDemo extends App:
+object ValidatedDemo /* extends App */:
   delim()
   label("Both invald, both errors reported")
   val p2 = Person.make("", -1)

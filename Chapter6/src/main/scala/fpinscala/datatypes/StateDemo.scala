@@ -1,7 +1,8 @@
 package fpinscala.datatypes
+
 import fpinscala.utils.*
 
-object StateDemo1 /* extends App */:
+object StateDemo1 extends App:
   import State.*
   import fpinscala.rng.{RNG, SimpleRNG}
   import fpinscala.rand.*
@@ -9,18 +10,18 @@ object StateDemo1 /* extends App */:
   type Rand[A] = State[RNG, A]
 
   delim()
-  val int: Rand[Int] = State(Rand.int)
-  val double: Rand[Double] = State(Rand.double)
-  val nonNegativeInt: Rand[Int] = State(Rand.nonNegativeInt)
+  val int: Rand[Int]             = State(Rand.int)
+  val double: Rand[Double]       = State(Rand.double)
+  val nonNegativeInt: Rand[Int]  = State(Rand.nonNegativeInt)
   val nonNegativeEven: Rand[Int] = nonNegativeInt.map(i => i - (i % 2))
 
   def both[A, B](ra: Rand[A], rb: Rand[B]): Rand[(A, B)] =
     ra.map2(rb)((_, _))
 
-  def intDouble: Rand[(Int, Double)] = both(int, double)
-  def doubleInt: Rand[(Double, Int)] = both(double, int)
+  def intDouble: Rand[(Int, Double)]          = both(int, double)
+  def doubleInt: Rand[(Double, Int)]          = both(double, int)
   def double3: Rand[(Double, Double, Double)] = State(Rand.double3)
-  def ints(count: Int): Rand[List[Int]] = State(Rand.ints(count))
+  def ints(count: Int): Rand[List[Int]]       = State(Rand.ints(count))
 
   def nonNegativeLessThan(n: Int): Rand[Int] =
     nonNegativeInt.flatMap: i =>
@@ -29,16 +30,18 @@ object StateDemo1 /* extends App */:
       else nonNegativeLessThan(n)
 
   delim()
-  label("int"); println(int.run(SimpleRNG(42)))
-  label("double"); println(double.run(SimpleRNG(42)))
-  label("nonNegativeInt"); println(nonNegativeInt.run(SimpleRNG(42)))
-  label("nonNegativeEven"); println(nonNegativeEven.run(SimpleRNG(42)))
-  label("intDouble"); println(intDouble.run(SimpleRNG(42)))
-  label("doubleInt"); println(doubleInt.run(SimpleRNG(42)))
-  label("double3"); println(double3.run(SimpleRNG(42)))
-  label("ints"); println(ints(5).run(SimpleRNG(42)))
+  val rng = SimpleRNG(42)
+
+  label("int"); println(int.run(rng))
+  label("double"); println(double.run(rng))
+  label("nonNegativeInt"); println(nonNegativeInt.run(rng))
+  label("nonNegativeEven"); println(nonNegativeEven.run(rng))
+  label("intDouble"); println(intDouble.run(rng))
+  label("doubleInt"); println(doubleInt.run(rng))
+  label("double3"); println(double3.run(rng))
+  label("ints"); println(ints(5).run(rng))
   label("nonNegativeLessThan");
-  println(nonNegativeLessThan(10).run(SimpleRNG(42)))
+  println(nonNegativeLessThan(10).run(rng))
 
   delim()
 end StateDemo1
@@ -82,7 +85,7 @@ object StateDemo2 /* extends App */:
 
     def wordCounts(str: String): WordMap[Unit] = for
       currMap <- get[Map[String, Int]]
-      _ <- set(update(str)(currMap))
+      _       <- set(update(str)(currMap))
     yield ()
 
     val m = for
@@ -149,7 +152,7 @@ def simulateMachine(inputs: List[Input]): State[Machine, (Int, Int)] =
 object MachineDemo /* extends App */ {
   import Input.*
 
-  val inputs = List(Coin, Turn, Coin, Coin, Turn, Turn, Turn)
+  val inputs      = List(Coin, Turn, Coin, Coin, Turn, Turn, Turn)
   val initalState = Machine(true, 10, 5)
 
   println(
