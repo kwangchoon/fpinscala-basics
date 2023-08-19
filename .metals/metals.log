@@ -36129,3 +36129,324 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.08.17 16:27:57 INFO  no build target found for D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala. Using presentation compiler with project's scala-library version: 3.3.0
 2023.08.17 16:28:02 INFO  time: code lens generation in 27s
 2023.08.17 16:28:26 INFO  time: indexed workspace in 33s
+2023.08.18 07:53:50 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.18 07:53:50 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.18 07:53:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.18 07:53:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.18 07:53:50 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.18 07:53:50 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.18 07:53:50 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.18 07:53:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.18 07:53:54 INFO  running 'C:\Program Files\Java\jdk-17.0.1\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\user\AppData\Local\Temp\metals7731388651301004338\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.08.18 07:53:55 INFO  time: Imported build in 4.39s
+2023.08.18 07:54:05 INFO  [info] welcome to sbt 1.9.0 (Oracle Corporation Java 17.0.1)
+2023.08.18 07:54:09 INFO  [info] loading global plugins from C:\Users\user\.sbt\1.0\plugins
+2023.08.18 07:54:13 INFO  [info] loading settings for project fpinscala-basics-build-build from metals.sbt ...
+2023.08.18 07:54:13 INFO  [info] loading project definition from D:\Git\FP\fpinscala-basics\project\project
+2023.08.18 07:54:15 INFO  [info] loading settings for project fpinscala-basics-build from metals.sbt ...
+2023.08.18 07:54:15 INFO  [info] loading project definition from D:\Git\FP\fpinscala-basics\project
+2023.08.18 07:54:19 INFO  time: indexed workspace in 24s
+8월 18, 2023 7:54:20 오전 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.08.18 07:54:27 INFO  [success] Generated .bloop\fpinscala-basics-build.json
+2023.08.18 07:54:29 INFO  [success] Total time: 13 s, completed 2023. 8. 18. ?삤?쟾 7:54:29
+2023.08.18 07:54:31 INFO  [info] loading settings for project root from build.sbt ...
+2023.08.18 07:54:33 INFO  [info] set current project to FPinScala (in build file:/D:/Git/FP/fpinscala-basics/)
+2023.08.18 07:54:36 INFO  [success] Generated .bloop\utils.json
+2023.08.18 07:54:36 INFO  [success] Generated .bloop\root.json
+2023.08.18 07:54:36 INFO  [success] Generated .bloop\basics.json
+2023.08.18 07:54:36 INFO  [success] Generated .bloop\root-test.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\utils-test.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter4.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter6.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter2.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter1.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter6-test.json
+2023.08.18 07:54:37 INFO  [success] Generated .bloop\chapter3.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter4-test.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter5.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter3-test.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter5-test.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter1-test.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\basics-test.json
+2023.08.18 07:54:38 INFO  [success] Generated .bloop\chapter2-test.json
+2023.08.18 07:54:38 INFO  [success] Total time: 6 s, completed 2023. 8. 18. ?삤?쟾 7:54:39
+2023.08.18 07:54:39 INFO  time: ran 'sbt bloopInstall' in 44s
+2023.08.18 07:54:39 INFO  Disconnecting from Bloop session...
+2023.08.18 07:54:39 INFO  Shut down connection with build server.
+2023.08.18 07:54:39 INFO  Shut down connection with build server.
+8월 18, 2023 7:54:39 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.ClosedChannelException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:348)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:348)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:284)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:121)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:114)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.channels.ClosedChannelException
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpenAndConnected(SocketChannelImpl.java:215)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:527)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:123)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.base/java.io.OutputStream.write(OutputStream.java:127)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 19 more
+
+2023.08.18 07:54:39 INFO  Attempting to connect to the build server...
+2023.08.18 07:54:39 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.18 07:54:39 INFO  Failed to run request with params WorkspaceBuildTargetsResult
+2023.08.18 07:54:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.18 07:54:39 INFO  Attempting to connect to the build server...
+2023.08.18 07:54:39 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.18 07:54:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.18 07:54:39 INFO  time: Connected to build server in 0.22s
+2023.08.18 07:54:39 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.18 07:54:40 INFO  time: Imported build in 0.7s
+2023.08.18 07:54:46 INFO  time: indexed workspace in 5.89s
+2023.08.18 11:08:55 INFO  compiling basics (1 scala source)
+2023.08.18 11:08:56 INFO  time: compiled basics in 1.49s
+2023.08.18 11:09:42 ERROR scalafmt: D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\for_comprehension\ForComp.scala:6: error: [dialect scala3] ; expected but , found
+enum Suit { Spades, Hearts, Diamonds, Clubs }
+                  ^
+2023.08.18 11:09:42 INFO  compiling basics (1 scala source)
+2023.08.18 11:09:44 INFO  time: compiled basics in 1.31s
+2023.08.18 11:09:58 INFO  compiling basics (1 scala source)
+2023.08.18 11:10:01 INFO  time: compiled basics in 2.57s
+8월 19, 2023 7:43:16 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 106
+2023.08.19 07:44:12 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 07:44:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 07:44:12 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.19 07:44:12 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 07:44:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 07:47:12 INFO  compiling basics (1 scala source)
+2023.08.19 07:47:15 INFO  time: compiled basics in 2.69s
+2023.08.19 07:47:54 INFO  compiling basics (1 scala source)
+2023.08.19 07:47:54 INFO  time: compiled basics in 0.67s
+8월 19, 2023 7:48:24 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 314
+2023.08.19 07:48:26 INFO  compiling basics (1 scala source)
+2023.08.19 07:48:26 INFO  time: compiled basics in 0.63s
+8월 19, 2023 7:48:45 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 351
+2023.08.19 07:48:51 INFO  compiling basics (1 scala source)
+2023.08.19 07:48:51 INFO  time: compiled basics in 0.31s
+8월 19, 2023 7:49:15 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 359
+2023.08.19 07:52:47 INFO  compiling basics (1 scala source)
+2023.08.19 07:52:47 INFO  time: compiled basics in 0.49s
+2023.08.19 07:52:48 INFO  compiling basics (2 scala sources)
+2023.08.19 07:52:48 INFO  time: compiled basics in 0.25s
+2023.08.19 07:53:14 INFO  compiling basics (2 scala sources)
+2023.08.19 07:53:14 INFO  time: compiled basics in 0.24s
+2023.08.19 07:53:34 INFO  compiling basics (2 scala sources)
+2023.08.19 07:53:34 INFO  time: compiled basics in 0.57s
+8월 19, 2023 7:54:18 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 586
+8월 19, 2023 7:54:18 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 588
+8월 19, 2023 7:54:19 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 594
+8월 19, 2023 7:54:19 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 596
+2023.08.19 07:54:33 ERROR scalafmt: D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\imperative\Demo.scala:12: error: [dialect scala3] end of file expected but } found
+}
+^
+2023.08.19 07:54:33 INFO  compiling basics (1 scala source)
+2023.08.19 07:54:33 INFO  time: compiled basics in 0.12s
+2023.08.19 07:54:38 INFO  compiling basics (1 scala source)
+2023.08.19 07:54:38 INFO  time: compiled basics in 0.44s
+8월 19, 2023 7:54:44 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 668
+2023.08.19 07:54:46 INFO  compiling basics (1 scala source)
+2023.08.19 07:54:46 INFO  time: compiled basics in 0.36s
+2023.08.19 07:55:08 INFO  compiling basics (1 scala source)
+2023.08.19 07:55:08 INFO  time: compiled basics in 0.16s
+2023.08.19 07:55:24 INFO  compiling basics (1 scala source)
+2023.08.19 07:55:24 INFO  time: compiled basics in 0.51s
+2023.08.19 07:55:34 INFO  compiling basics (1 scala source)
+2023.08.19 07:55:34 INFO  time: compiled basics in 0.44s
+2023.08.19 07:55:43 INFO  compiling basics (1 scala source)
+2023.08.19 07:55:43 INFO  time: compiled basics in 0.73s
+2023.08.19 07:56:27 INFO  compiling basics (1 scala source)
+2023.08.19 07:56:27 INFO  time: compiled basics in 0.23s
+2023.08.19 07:56:40 INFO  compiling basics (1 scala source)
+2023.08.19 07:56:40 INFO  time: compiled basics in 0.34s
+8월 19, 2023 7:56:52 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 855
+2023.08.19 07:57:04 INFO  compiling basics (1 scala source)
+2023.08.19 07:57:04 INFO  time: compiled basics in 0.23s
+2023.08.19 07:57:52 INFO  compiling basics (1 scala source)
+2023.08.19 07:57:52 INFO  time: compiled basics in 0.4s
+2023.08.19 07:57:53 INFO  compiling basics (2 scala sources)
+2023.08.19 07:57:53 INFO  time: compiled basics in 0.21s
+2023.08.19 07:58:39 INFO  compiling basics (2 scala sources)
+2023.08.19 07:58:39 INFO  time: compiled basics in 0.12s
+2023.08.19 07:58:39 INFO  compiling basics (2 scala sources)
+2023.08.19 07:58:39 INFO  time: compiled basics in 0.15s
+2023.08.19 07:59:41 INFO  compiling basics (3 scala sources)
+2023.08.19 07:59:41 INFO  time: compiled basics in 0.29s
+2023.08.19 07:59:41 INFO  compiling basics (3 scala sources)
+2023.08.19 07:59:42 INFO  time: compiled basics in 0.47s
+2023.08.19 08:00:30 ERROR scalafmt: D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FunctionalDemo.scala:1: error: [dialect scala3] illegal start of definition .
+package fpinscala.basics.
+                        ^
+2023.08.19 08:00:31 INFO  compiling basics (3 scala sources)
+2023.08.19 08:00:31 INFO  time: compiled basics in 0.17s
+2023.08.19 08:00:41 INFO  compiling basics (3 scala sources)
+2023.08.19 08:00:41 INFO  time: compiled basics in 0.14s
+2023.08.19 08:01:06 INFO  compiling basics (3 scala sources)
+2023.08.19 08:01:06 INFO  time: compiled basics in 0.32s
+2023.08.19 08:01:06 INFO  compiling basics (3 scala sources)
+2023.08.19 08:01:07 INFO  time: compiled basics in 0.51s
+2023.08.19 08:01:59 INFO  compiling basics (3 scala sources)
+2023.08.19 08:01:59 INFO  time: compiled basics in 0.4s
+2023.08.19 08:02:27 INFO  compiling basics (2 scala sources)
+2023.08.19 08:02:27 INFO  time: compiled basics in 0.76s
+8월 19, 2023 8:02:28 오전 scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FunctionalDemo.scala
+java.nio.file.NoSuchFileException: D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FunctionalDemo.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:378)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:256)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:189)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:201)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:163)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:141)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:110)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:44)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:43)
+	at scala.meta.internal.mtags.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:201)
+	at scala.meta.internal.pc.HoverProvider$.$anonfun$1(HoverProvider.scala:126)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:126)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:325)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:146)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:132)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:231)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+8월 19, 2023 8:02:28 오전 scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FunctionalDemo.scala
+java.nio.file.NoSuchFileException: D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FunctionalDemo.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:378)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:256)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:272)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:189)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:201)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:163)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:141)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:141)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:110)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:44)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:43)
+	at scala.meta.internal.mtags.MtagsEnrichments$.symbolDocumentation(MtagsEnrichments.scala:201)
+	at scala.meta.internal.pc.HoverProvider$.$anonfun$1(HoverProvider.scala:126)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:126)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:325)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:146)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:132)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:231)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023.08.19 08:02:51 INFO  compiling basics (1 scala source)
+2023.08.19 08:02:51 INFO  time: compiled basics in 99ms
+2023.08.19 08:03:14 INFO  compiling basics (1 scala source)
+2023.08.19 08:03:14 INFO  time: compiled basics in 80ms
+8월 19, 2023 8:03:22 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1497
+2023.08.19 08:03:41 INFO  compiling basics (1 scala source)
+2023.08.19 08:03:41 INFO  time: compiled basics in 0.16s
+2023.08.19 08:03:55 INFO  compiling basics (1 scala source)
+2023.08.19 08:03:55 INFO  time: compiled basics in 0.19s
+2023.08.19 08:05:13 INFO  compiling basics (1 scala source)
+2023.08.19 08:05:13 INFO  time: compiled basics in 0.23s
+2023.08.19 08:20:43 INFO  compiling basics (1 scala source)
+2023.08.19 08:20:43 INFO  time: compiled basics in 0.44s
+2023.08.19 08:24:38 INFO  compiling basics (2 scala sources)
+2023.08.19 08:24:38 INFO  time: compiled basics in 0.24s
+2023.08.19 10:45:54 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 10:45:54 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 10:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 10:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 10:45:54 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.19 10:45:54 INFO  Connected to Build server: Bloop v1.5.8
+2023.08.19 10:45:54 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 10:45:54 INFO  Bloop uses C:\Program Files\Java\jdk-17.0.1 defined at C:\Users\user\.bloop\bloop.json
+2023.08.19 10:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 10:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Git\FP\fpinscala-basics\project\.metals\bsp.trace.json or C:\Users\user\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.19 10:45:54 INFO  time: Imported build in 0.54s
+2023.08.19 10:45:57 INFO  time: indexed workspace in 2.16s
+2023.08.19 10:45:57 ERROR Empty build targets. Expected at least one build target identifier.
+2023.08.19 10:45:57 INFO  no build target found for D:\Git\FP\fpinscala-basics\Basics\src\main\scala\fpinscala\basics\imperative_vs_functional\functional\fplibrary\FPLibrary.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.08.19 10:45:57 INFO  time: code lens generation in 2.81s
+8월 19, 2023 10:47:22 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1799
+2023.08.19 10:47:54 ERROR Empty build targets. Expected at least one build target identifier.
+2023.08.19 10:48:40 ERROR Empty build targets. Expected at least one build target identifier.
+2023.08.19 10:48:48 ERROR Empty build targets. Expected at least one build target identifier.
+8월 19, 2023 10:51:00 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1981
+2023.08.19 10:51:01 ERROR Empty build targets. Expected at least one build target identifier.
+2023.08.19 10:51:05 ERROR Empty build targets. Expected at least one build target identifier.
+2023.08.19 10:51:37 ERROR Empty build targets. Expected at least one build target identifier.
+8월 19, 2023 10:51:42 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2024
+2023.08.19 10:51:54 ERROR Empty build targets. Expected at least one build target identifier.
+8월 19, 2023 10:52:15 오전 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2080
+2023.08.19 10:52:17 ERROR Empty build targets. Expected at least one build target identifier.
